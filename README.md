@@ -30,3 +30,10 @@ currently there is only 1 optional parameter and 1 positional argument
     optional arguments:
       -h, --help  show this help message and exit
       --log       wheter or not to display time elapsed and stuff
+
+# how to specify time
+
+you can specify the time for the timer in two different ways
+
+- you can write it like: "hh:mm:ss", e.g. 1:2:3 or 01:02:03 but not 001:002:003
+- or you can write a single number with a postfix, e.g. 10s = 10 = 00:00:10, 10m = 00:10:00, 10h = 10:00:00
