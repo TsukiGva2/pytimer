@@ -39,7 +39,7 @@ def preetify(some_time):
 if __name__ == "__main__":
   p = argparse.ArgumentParser()
   p.add_argument("time", help="time to wait in seconds, postfix with 'm' or 'h' for minutes/hours")
-  p.add_argument("--log", help="wheter or not to display time elapsed and stuff", action="store_true")
+  p.add_argument("--log", help="wheter or not to display time elapsed and stuff, takes the time between logs as an argument", type=int)
 
   args = p.parse_args()
 
@@ -55,18 +55,19 @@ if __name__ == "__main__":
     prev = curr
     if args.log:
       print("elapsed: {e}/{t}".format(e=preetify(elapsed), t=preety_time))
-      sleep(0.3)
+      sleep(args.log)
 
   print("time's up!")
 
   try:
     player = musicalbeeps.Player(volume = 0.5, mute_output = True)
-    for _ in range(0, 4):
+    while True:
+      for _ in range(0, 4):
+        player.play_note("Bb", 0.2)
+        player.play_note("A", 0.2)
+        player.play_note("Ab", 0.2)
+      player.play_note("G", 0.7)
+      player.play_note("Gb", 0.4)
       player.play_note("Bb", 0.2)
-      player.play_note("A", 0.2)
-      player.play_note("Ab", 0.2)
-    player.play_note("G", 0.7)
-    player.play_note("Gb", 0.4)
-    player.play_note("Bb", 0.2)
   except KeyboardInterrupt:
-    exit(0)
+      exit(0)
