@@ -55,8 +55,8 @@ if __name__ == "__main__":
     elapsed += curr - prev
     prev = curr
     if args.log:
-      print("elapsed: {e}/{t}".format(e=preetify(elapsed), t=preety_time))
       sleep(args.log)
+      print("elapsed: {e}/{t}".format(e=preetify(elapsed), t=preety_time))
 
   print("time's up!")
 
