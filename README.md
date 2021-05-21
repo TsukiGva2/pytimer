@@ -22,14 +22,15 @@ i tested this on python 3.9.5, but i'm pretty sure it works on python >= 3.5, th
 
 currently there is only 1 optional parameter and 1 positional argument
 
-    usage: timer.py [-h] [--log] time
+    usage: pytimer.py [-h] [--log LOG] [--repeat] time
 
     positional arguments:
       time        time to wait in seconds, postfix with 'm' or 'h' for minutes/hours
 
     optional arguments:
       -h, --help  show this help message and exit
-      --log       wheter or not to display time elapsed and stuff
+      --log LOG   wheter or not to display time elapsed and stuff, takes the time between logs as an argument
+      --repeat    when used makes the song at the end repeat until interrupted
 
 # how to specify time
 
