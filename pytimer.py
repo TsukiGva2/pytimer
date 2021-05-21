@@ -70,7 +70,7 @@ if __name__ == "__main__":
       player.play_note("G", 0.7)
       player.play_note("Gb", 0.4)
       player.play_note("Bb", 0.2)
-      if !args.repeat:
+      if not args.repeat:
         break
   except KeyboardInterrupt:
       exit(0)
