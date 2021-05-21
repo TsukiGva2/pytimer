@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import musicalbeeps
 from time import sleep, time
 from sys import argv, exit
