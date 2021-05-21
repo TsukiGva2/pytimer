@@ -12,7 +12,7 @@ or
 
     $ pip3 install musicalbeeps
 
-to install the latest version.
+to install the latest version (NOTE: replace pip3 with your pip executable name).
 
 and then run the script with whatever name is your python3 executable.
 
