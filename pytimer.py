@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
   try:
     player = musicalbeeps.Player(volume = 0.5, mute_output = True)
-    while args.repeat:
+    while True:
       for _ in range(0, 4):
         player.play_note("Bb", 0.2)
         player.play_note("A", 0.2)
@@ -70,5 +70,7 @@ if __name__ == "__main__":
       player.play_note("G", 0.7)
       player.play_note("Gb", 0.4)
       player.play_note("Bb", 0.2)
+      if !args.repeat:
+        break
   except KeyboardInterrupt:
       exit(0)
