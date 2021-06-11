@@ -20,7 +20,7 @@ i tested this on python 3.9.5, but i'm pretty sure it works on python >= 3.5, th
 
 # arguments
 
-currently there are only 2 optional arguments and 1 positional argument
+currently there are only 2 optional arguments(excluding help) and 1 positional argument
 
     usage: pytimer.py [-h] [--log LOG] [--repeat] time
 
